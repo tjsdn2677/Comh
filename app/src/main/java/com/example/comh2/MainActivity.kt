@@ -37,6 +37,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val data = arrayOf("oulu", "Helsinki", "Tampere")
+
+        val reminderAdapter =ReminderAdapter(applicationContext, data)
+        list.adapter =reminderAdapter
+
 
     }
 }
